@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "oz-mini-django-test-restfulapi"
+version = "0.1.0"
+description = ""
+authors = ["enterspacebs <anotherhell48@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "oz_mini_django_test_restfulapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
