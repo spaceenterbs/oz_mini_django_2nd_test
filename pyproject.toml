@@ -10,6 +10,7 @@ packages = [{include = "oz_mini_django_test_restfulapi"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^4.2.3"
+djangorestframework = "^3.14.0"
 
 
 [build-system]
