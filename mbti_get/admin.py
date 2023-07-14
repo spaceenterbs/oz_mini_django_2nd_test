@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import Answer, Result
 
 
-# Register your models here.
 @admin.register(Answer)
 class AnswerAdmin(admin.ModelAdmin):
     pass

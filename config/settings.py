@@ -35,7 +35,6 @@ THIRD_PARTY_APPS = [
 ]
 
 CUSTOM_APPS = [
-    "questions.apps.QuestionsConfig",
     "common.apps.CommonConfig",
     "mbti_get.apps.MbtiGetConfig",
 ]
