@@ -9,9 +9,9 @@ class AnswerSerializer(serializers.ModelSerializer):
 
 
 class ResultSerializer(serializers.ModelSerializer):
-    answer = AnswerSerializer(read_only=True)
+    answer = AnswerSerializer()
 
     # answer = serializers.PrimaryKeyRelatedField(queryset=Answer.objects.all())
     class Meta:
         model = Result
-        fields = ["id", "answer", "mbti_result"]
+        fields = ["id", "mbti_result"]

@@ -12,7 +12,7 @@ class AnswerListCreate(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = AnswerSerializer(data=request.data)
+        serializer = AnswerSerializer(data=request.data, many=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)

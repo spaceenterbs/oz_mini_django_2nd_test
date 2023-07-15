@@ -35,14 +35,18 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
-name = "django-dashing"
-version = "0.3.4"
-description = "A simple Django dashboard app to visualize interesting data about your project."
+name = "django-cors-headers"
+version = "4.2.0"
+description = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
 optional = false
-python-versions = "*"
+python-versions = ">=3.8"
 files = [
-    {file = "django-dashing-0.3.4.tar.gz", hash = "sha256:609b47ed6acc96147d35a6eeb6ca78b577cd4f489b06e7aaab8d8a733fbcab0c"},
+    {file = "django_cors_headers-4.2.0-py3-none-any.whl", hash = "sha256:9ada212b0e2efd4a5e339360ffc869cb21ac5605e810afe69f7308e577ea5bde"},
+    {file = "django_cors_headers-4.2.0.tar.gz", hash = "sha256:f9749c6410fe738278bc2b6ef17f05195bc7b251693c035752d8257026af024f"},
 ]
+
+[package.dependencies]
+Django = ">=3.2"
 
 [[package]]
 name = "djangorestframework"
@@ -100,4 +104,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c432defad24d331ca0daab206c0905d4ef34cf1713a255a995d36205f663f85c"
+content-hash = "399c5b2019e70031b4dad77e897e40b71a0d68b3eb744160584723e9dd61ed80"
