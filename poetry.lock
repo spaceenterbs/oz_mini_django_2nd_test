@@ -35,6 +35,16 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-dashing"
+version = "0.3.4"
+description = "A simple Django dashboard app to visualize interesting data about your project."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-dashing-0.3.4.tar.gz", hash = "sha256:609b47ed6acc96147d35a6eeb6ca78b577cd4f489b06e7aaab8d8a733fbcab0c"},
+]
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 description = "Web APIs for Django, made easy."
@@ -90,4 +100,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "89d1e1204d115b0551cf0c4ddf7e51b2056efa65480ce387573d88cdac87bbc4"
+content-hash = "c432defad24d331ca0daab206c0905d4ef34cf1713a255a995d36205f663f85c"
