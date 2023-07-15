@@ -7,7 +7,7 @@ class Answer(CommonModel):
     contents = models.CharField(max_length=255)
 
     def __str__(self) -> str:
-        return self.choices
+        return f"{self.choices} - {self.contents}"
 
 
 class Result(CommonModel):

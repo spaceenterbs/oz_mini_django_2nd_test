@@ -4,11 +4,16 @@ from .models import Answer, Result
 
 @admin.register(Answer)
 class AnswerAdmin(admin.ModelAdmin):
-    pass
-    # list_display = ("id", "contents", "choices")
+    list_display = (
+        "id",
+        "choices",
+        "contents",
+    )
 
 
 @admin.register(Result)
 class ResultAdmin(admin.ModelAdmin):
-    pass
-    # list_display = ("id", "answer", "mbti_result")
+    list_display = (
+        "id",
+        "mbti_result",
+    )
