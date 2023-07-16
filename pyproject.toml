@@ -5,7 +5,7 @@ description = ""
 authors = ["enterspacebs <anotherhell48@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "oz_mini_django_test_restfulapi"}]
+packages = [{include = "oz_2nd_project_django"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
