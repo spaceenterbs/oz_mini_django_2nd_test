@@ -84,10 +84,10 @@ if DEBUG:
     ]
 else:
     CORS_ALLOWED_ORIGINS = [
-        "https://sshs2ndprojectreact.onrender.com",
+        "https://sshsreact.onrender.com",
     ]
     CSRF_TRUSTED_ORIGINS = [
-        "https://sshs2ndprojectreact.onrender.com",
+        "https://sshsreact.onrender.com",
     ]
 
 
