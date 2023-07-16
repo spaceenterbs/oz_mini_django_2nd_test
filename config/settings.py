@@ -68,13 +68,28 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    # 허용할 Origin 추가
-    "http://localhost:8000",
-    "http://localhost:3000",
-    "http://localhost:3002",
-    "http://localhost:3001",
-]
+if DEBUG:
+    CORS_ALLOWED_ORIGINS = [
+        # 허용할 Origin 추가
+        "http://localhost:8000",
+        "http://localhost:3000",
+        "http://localhost:3002",
+        "http://localhost:3001",
+    ]
+    CSRF_TRUSTED_ORIGINS = [
+        "http://localhost:8000",
+        "http://localhost:3000",
+        "http://localhost:3002",
+        "http://localhost:3001",
+    ]
+else:
+    CORS_ALLOWED_ORIGINS = [
+        "https://sshs2ndprojectreact.onrender.com",
+    ]
+    CSRF_TRUSTED_ORIGINS = [
+        "https://sshs2ndprojectreact.onrender.com",
+    ]
+
 
 ROOT_URLCONF = "config.urls"
 
