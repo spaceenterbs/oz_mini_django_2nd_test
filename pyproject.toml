@@ -11,6 +11,8 @@ packages = [{include = "oz_mini_django_test_restfulapi"}]
 python = "^3.11"
 django = "^4.2.3"
 django-cors-headers = "^4.2.0"
+psycopg2 = "^2.9.6"
+djangorestframework = "^3.14.0"
 
 
 [build-system]

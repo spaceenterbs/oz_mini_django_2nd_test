@@ -12,7 +12,7 @@ class AnswerListCreate(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = AnswerSerializer(data=request.data, many=True)
+        serializer = AnswerSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -31,21 +31,3 @@ class ResultListCreate(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-# from rest_framework import generics
-# from .models import Answer, Result
-# from .serializers import AnswerSerializer, ResultSerializer
-
-
-# class AnswerListCreate(generics.ListCreateAPIView):
-#     queryset = Answer.objects.all()
-#     serializer_class = AnswerSerializer
-
-
-# class ResultListCreate(generics.ListCreateAPIView):
-#     queryset = Result.objects.all()
-#     serializer_class = ResultSerializer
-
-
-# # from django.shortcuts import render

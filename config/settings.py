@@ -64,10 +64,6 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     # 허용할 Origin 추가
-    "https://example.com",
-    "https://sub.example.com",
-    "http://localhost:8080",
-    "http://127.0.0.1:9000",
     "http://localhost:8000",
     "http://localhost:3000",
 ]
