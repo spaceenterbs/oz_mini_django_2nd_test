@@ -82,10 +82,10 @@ if DEBUG:
     ]
 else:
     CORS_ALLOWED_ORIGINS = [
-        "https://dainty-torrone-8bd854.netlify.app/",
+        "https://dainty-torrone-8bd854.netlify.app",
     ]
     CSRF_TRUSTED_ORIGINS = [
-        "https://dainty-torrone-8bd854.netlify.app/",
+        "https://dainty-torrone-8bd854.netlify.app",
     ]
 
 
