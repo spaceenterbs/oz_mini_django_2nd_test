@@ -76,20 +76,16 @@ if DEBUG:
     CORS_ALLOWED_ORIGINS = [
         # 허용할 Origin 추가
         "http://localhost:3000",
-        "*",
     ]
     CSRF_TRUSTED_ORIGINS = [
         "http://localhost:3000",
-        "*",
     ]
 else:
     CORS_ALLOWED_ORIGINS = [
         "https://hilarious-buttercream-1c7471.netlify.app",
-        "*",
     ]
     CSRF_TRUSTED_ORIGINS = [
         "https://hilarious-buttercream-1c7471.netlify.app",
-        "*",
     ]
 
 
