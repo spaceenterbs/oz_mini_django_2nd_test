@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-^z@3owk4)lafz*a=p0^y$2^2z$=_4z&cw8nf7n+8rdf*_prqlp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "RENDER" not in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
 if RENDER_EXTERNAL_HOSTNAME:
@@ -76,16 +76,20 @@ if DEBUG:
     CORS_ALLOWED_ORIGINS = [
         # 허용할 Origin 추가
         "http://localhost:3000",
+        "*",
     ]
     CSRF_TRUSTED_ORIGINS = [
         "http://localhost:3000",
+        "*",
     ]
 else:
     CORS_ALLOWED_ORIGINS = [
-        "https://dainty-torrone-8bd854.netlify.app",
+        "https://hilarious-buttercream-1c7471.netlify.app",
+        "*",
     ]
     CSRF_TRUSTED_ORIGINS = [
-        "https://dainty-torrone-8bd854.netlify.app",
+        "https://hilarious-buttercream-1c7471.netlify.app",
+        "*",
     ]
 
 
