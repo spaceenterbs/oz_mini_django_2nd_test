@@ -31,3 +31,12 @@ class ResultListCreate(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class CountResult(APIView):
+    def get(self, request):
+        results = Result.objects.all()
+        count = results.count()
+        return Response(
+            {"count": count},
+        )

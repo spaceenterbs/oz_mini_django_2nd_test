@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AnswerListCreate, ResultListCreate
+from .views import AnswerListCreate, ResultListCreate, CountResult
 
 urlpatterns = [
     path(
@@ -11,5 +11,10 @@ urlpatterns = [
         "results/",
         ResultListCreate.as_view(),
         name="result-list",
+    ),
+    path(
+        "count/",
+        CountResult.as_view(),
+        name="count",
     ),
 ]

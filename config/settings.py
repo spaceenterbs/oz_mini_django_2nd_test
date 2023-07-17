@@ -14,6 +14,10 @@ from pathlib import Path
 import os
 import dj_database_url
 
+# import sentry_sdk
+# from sentry_sdk.integrations.django import DjangoIntegration
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -78,10 +82,10 @@ if DEBUG:
     ]
 else:
     CORS_ALLOWED_ORIGINS = [
-        "https://sshsreact.onrender.com",
+        "https://dainty-torrone-8bd854.netlify.app/",
     ]
     CSRF_TRUSTED_ORIGINS = [
-        "https://sshsreact.onrender.com",
+        "https://dainty-torrone-8bd854.netlify.app/",
     ]
 
 
@@ -167,3 +171,16 @@ if not DEBUG:
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# if not DEBUG:
+#     sentry_sdk.init(
+#         dsn="https://08c4da42076345598f062d81fd7b545f@o4505542252167168.ingest.sentry.io/4505542290636800",
+#         integrations=[DjangoIntegration()],
+#         # Set traces_sample_rate to 1.0 to capture 100%
+#         # of transactions for performance monitoring.
+#         # We recommend adjusting this value in production.
+#         traces_sample_rate=1.0,
+#         # If you wish to associate users to errors (assuming you are using
+#         # django.contrib.auth) you may enable sending PII data.
+#         send_default_pii=True,
+#     )
